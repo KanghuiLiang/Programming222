@@ -1,0 +1,94 @@
+package programming2Week2;
+import java.util.*;
+public class Smoothies {
+   
+	private int Spoon;
+	private String Fruit;
+	private String liquid;
+	private Boolean Status;
+	private String Time;
+	private String Message;
+	
+	public Smoothies() {
+		this.setSpoon(2);
+		this.setFruit("Banana");
+		this.setLiquid("Milk");
+		this.setStatus(true);
+		this.setTime("30s");
+		this.setMessage("It will be ready.");
+	} //default constructor
+	
+	public Smoothies(int spoon, String fruit, String water, Boolean n, String time, String message) {
+		this.setSpoon(spoon);
+		this.setFruit(fruit);
+		this.setLiquid(water);
+		this.setStatus(n);
+		this.setTime(time);
+		this.setMessage(message);
+	}//the second constructor 
+	
+	
+	public void CheckPreparation() {
+		System.out.println("Wait for "+this.getTime());
+	} //check the waiting time
+	
+	
+	public void SmoothiesReady(Boolean n) {
+		if (n==true) 
+			System.out.println("Now it is processing. Please wait for " +Time);
+		else
+			System.out.println("Now it is ready, please take it out and make a new one.");
+	} //using if else to show different message if there is true or false 
+	
+	public void addSpoon(int q) {
+		Scanner console = new Scanner(System.in);
+		System.out.println("Now the spoon is "+this.getSpoon()+". Do you want to add more? \nType Y/N");
+		String input = console.nextLine();
+		if (input.equalsIgnoreCase("y")) {
+			System.out.println("Input the quatity: ");
+			q=console.nextInt();
+			System.out.println("Now the spoon is "+q);
+		}
+//		else
+//			this.getSpoon()=q;
+	}
+	public String toString() {
+		return "There are " + Spoon+" "+Fruit+"(s)"+" and "+liquid+". "+Message;
+	}
+	public int getSpoon() {
+		return Spoon;
+	}
+	public void setSpoon(int spoon) {
+		Spoon = spoon;
+	}
+	public String getFruit() {
+		return Fruit;
+	}
+	public void setFruit(String fruit) {
+		Fruit = fruit;
+	}
+	public String getLiquid() {
+		return liquid;
+	}
+	public void setLiquid(String liquid) {
+		this.liquid = liquid;
+	}
+	public Boolean getStatus() {
+		return Status;
+	}
+	public void setStatus(Boolean status) {
+		Status = status;
+	}
+	public String getTime() {
+		return Time;
+	}
+	public void setTime(String time) {
+		Time = time;
+	}
+	public String getMessage() {
+		return Message;
+	}
+	public void setMessage(String message) {
+		Message = message;
+	}
+}

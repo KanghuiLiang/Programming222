@@ -1,0 +1,10 @@
+package Game;
+
+public class Normal_Monster extends Monster {
+
+	public Normal_Monster(String name, int mstrLVL, int trsureFr, int lseLVL, int scapStt, String specialCondition) {
+		super(name, mstrLVL, trsureFr, lseLVL, scapStt, specialCondition);
+		// TODO Auto-generated constructor stub
+	}
+
+}

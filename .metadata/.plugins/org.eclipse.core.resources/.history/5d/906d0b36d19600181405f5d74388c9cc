@@ -1,0 +1,20 @@
+package programming2Week2;
+
+public class Character {
+		 int MP;
+		 int HP;
+		 
+//	public Character() {
+//				MP=10;
+//				HP=10;
+//			}
+//	
+//	public Character(int hp, int mp) {
+//		MP=mp;
+//		HP=hp;
+//	}
+		 void heal(int hp) {}
+         void attack(int speed) {}
+         
+ 
+}

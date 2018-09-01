@@ -1,0 +1,11 @@
+package Game;
+
+public class Treasure extends Card_Constructor {
+
+	public Treasure(String name, int bonus, int price, String raceRestrict, String classRestriction,
+			String typeOfTreasure, String specialCondition) {
+		super(name, bonus, price, raceRestrict, classRestriction, typeOfTreasure, specialCondition);
+		// TODO Auto-generated constructor stub
+	}
+
+}

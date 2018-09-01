@@ -1,0 +1,25 @@
+package Mid;
+
+import java.util.*;
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<Monster> monster = new HashSet<Monster>();
+		
+		monster.add(new Normal_Monster("Hui", 100, 20));
+		monster.add(new Normal_Monster("Hui", 100, 20));
+		monster.add(new Normal_Monster("Hui", 100, 20));
+		monster.add(new Normal_Monster("Hui", 100, 20));
+		monster.add(new Normal_Monster("Hui", 100, 20));
+
+		
+		System.out.println("Monster:" +monster);
+		
+//		for(Monster monsters: monster)
+
+		
+	}
+
+}

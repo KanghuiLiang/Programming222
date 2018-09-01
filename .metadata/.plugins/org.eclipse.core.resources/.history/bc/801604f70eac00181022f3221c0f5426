@@ -1,0 +1,31 @@
+package Game;
+
+public class Treasure{
+	String name;
+	int bonus;
+	int price;
+	String raceRestrict;
+	String classRestriction;
+	String typeOfTreasure; //1 handed weapon, 2 handed weapon, helmet, armor, shoes, regular
+	String specialCondition;
+
+	public Treasure(String name, int bonus, int price, String raceRestrict, String classRestriction,
+			String typeOfTreasure, String specialCondition) {
+		this.name = name;
+	    this.bonus = bonus;
+		this.price = price;
+		this.raceRestrict = raceRestrict;
+		this.classRestriction = classRestriction;
+		this.typeOfTreasure = typeOfTreasure; 
+		this.specialCondition = specialCondition;
+	}
+	
+	public String toString() {
+		
+		return "\n[Treasure] " + name + "\nB:" + bonus + " $:" + price 
+				+ "\nRace Restrict: " + raceRestrict + "\nClass Restrict:  " + classRestriction
+				+ "\nType: " + typeOfTreasure + "\nSpecial Condition: " + specialCondition+"\n";
+		
+	}
+
+}

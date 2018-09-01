@@ -1,0 +1,68 @@
+package programming2Week2;
+
+     public class Alarm {
+     
+     private boolean AlarmStatus;
+     private String AlarmTime;
+     private String AlarmMessage;
+     
+     
+     public Alarm() {
+    	 this.setAlarmStatus(true);
+    	 this.setAlarmTime("5:00 ");
+    	 this.setAlarmMessage("Alarm is ON.\nPlease change it to off");
+     }  //default alarm
+        //first constructor 
+     
+     public Alarm(boolean status, String time, String message ) {
+    	this.setAlarmStatus(status);
+    	this.setAlarmTime(time);
+    	this.setAlarmMessage(message); //why we are using 'this'
+     }  //second constructor 
+   
+//     public Alarm(boolean status, String time) {
+//    	 this.setAlarmStatus(status);
+//    	 this.setAlarmTime(time);
+//     }  //another constructor
+     
+     
+     public void checkStatus() {
+    	    System.out.println("Now it is "+this.isAlarmStatus());
+     }
+     
+     public void AlarmStatus(boolean n) {
+      if (n == true)
+       System.out.println("Alarm is OFF.\nPlease PUT it ON");
+      else
+       System.out.println("Alarm is ON.\nPlease Turn it OFF"); 
+       this.setAlarmStatus(n); 
+     }
+     
+     public String toString() {
+    	 return "Status now is "+AlarmStatus+".Time is "+AlarmTime+"\n"+AlarmMessage;
+     }
+	public boolean isAlarmStatus() {
+		return AlarmStatus;
+	}
+
+	public void setAlarmStatus(boolean alarmStatus) {
+		AlarmStatus = alarmStatus;
+	}
+
+	public String getAlarmTime() {
+		return AlarmTime;
+	}
+
+	public void setAlarmTime(String alarmTime) {
+		AlarmTime = alarmTime;
+	}
+
+	public String getAlarmMessage() {
+		return AlarmMessage;
+	}
+
+	public void setAlarmMessage(String alarmMessage) {
+		AlarmMessage = alarmMessage;
+	}
+     
+   }

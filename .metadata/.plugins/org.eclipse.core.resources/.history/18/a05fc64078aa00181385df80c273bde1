@@ -1,0 +1,22 @@
+package Mid;
+
+import java.util.*;
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<String> monster = new HashSet<String>();
+		
+		monster.add("M1");
+		monster.add("M2");
+		monster.add("M3");
+		monster.add("M4");
+		monster.add("M5");
+		
+		System.out.println("Monster;" +monster);
+
+		
+	}
+
+}

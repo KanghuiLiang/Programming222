@@ -1,0 +1,24 @@
+package programming2Week2;
+
+public class CreateAlarm {
+
+	public static void main (String arg[]) {
+	     Alarm A1 = new Alarm();
+	     Alarm A2 = new Alarm(false, "7:00"," Thanks");
+	    
+	     
+	     //how to update the time??
+	    
+	     A1.checkStatus();
+	     System.out.println(A1);
+
+	     A2.checkStatus();
+	     A2.AlarmStatus(true);
+	     System.out.println(A2);
+	     
+	}
+	
+	
+	
+}
+

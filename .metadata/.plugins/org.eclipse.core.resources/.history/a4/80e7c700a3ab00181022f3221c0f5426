@@ -1,0 +1,10 @@
+package Game;
+
+public class Monster extends Card_Constructor {
+
+	public Monster(String name, String specialCondition) {
+		super(name, specialCondition);
+		// TODO Auto-generated constructor stub
+	}
+
+}

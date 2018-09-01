@@ -1,0 +1,62 @@
+package Game;
+
+import java.util.*;
+public class Combat {
+	
+	public static void main(String[] args) {
+		        boolean flag = true;
+		        Scanner scan = new Scanner(System.in);
+		        String[][] stage = {{"0,0", "0,1", "0,2"},
+		                {"1,0", "1,1", "1,2"},
+		                {"2,0", "2,1", "2,2"}};
+		        Location position = new Location(1,1, stage);
+		        position.printLocation();
+		        do {
+		            System.out.println("Move?" +
+		                    "\nUp, Down, Left, Right");
+		            String move = scan.nextLine();
+		            switch (move.toLowerCase()) {
+		                case "up":
+		                    position.setY(position.getY() - 1);
+		                    break;
+		                case "down":
+		                    position.setY(position.getY() + 1);
+		                    break;
+		                case "left":
+		                    position.setX(position.getX() - 1);
+		                    break;
+		                case "right":
+		                    position.setX(position.getX() + 1);
+		                    break;
+		                case "done":
+		                    flag = false;
+		                    break;
+
+		            }
+
+		            position.printLocation();
+
+		        } while (flag);
+		    }
+		Set<Monster> Monsters = new HashSet<Monster>();
+		String [] monName = {"Young Rat","Snails on Speed","Screaming Gekk","Potter_Plant","Big Foot","Bull Rog","Face Sucker","Gazebo"};
+		
+		for(int i = 0; i<monName.length; i++) {
+			Monsters.add(new Normal_Monster(monName[i], i, i, i, i, null));
+		}
+		
+		for(Monster Mon: Monsters) {
+			System.out.println(Mon+"\n");
+			
+		}
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Now You are in the easy level!");
+		System.out.println("Choose the room you wanna in. use(1-7)");
+//		int 
+		
+		
+		
+	}
+
+}

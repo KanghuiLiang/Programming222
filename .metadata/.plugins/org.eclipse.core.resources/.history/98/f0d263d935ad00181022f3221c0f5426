@@ -1,0 +1,21 @@
+package Game;
+
+import java.util.*;
+public class Combat {
+	
+	public static void main(String[] args) {
+		Set<Monster> Monsters = new HashSet<Monster>();
+		String [] monName = {"Young Rat","Snails on Speed","Screaming Gekk","Potter_Plant","Big Foot","Bull Rog","Face Sucker","Gazebo"};
+		
+		for(int i = 0; i<monName.length; i++) {
+			Monsters.add(new Normal_Monster(monName[i], i, (int)(Math.random()*50), i, i, null));
+		}
+		
+		for(Monster Mon: Monsters) {
+			System.out.println(Mon+"\n");
+			
+		}
+		
+	}
+
+}

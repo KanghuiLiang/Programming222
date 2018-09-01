@@ -1,0 +1,14 @@
+package programming2Week2;
+
+public class CreateSmoothies {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Smoothies S1 = new Smoothies();
+		Smoothies S2 = new Smoothies();
+		
+		System.out.println(S1);
+
+	}
+
+}

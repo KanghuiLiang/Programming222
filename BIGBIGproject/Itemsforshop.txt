@@ -1,0 +1,11 @@
+Jasmine 12.0
+Daisy 15.0
+Alyssum 20.0
+Iris 25.0
+Violet 25.0
+Ivy 12.0
+Grapes 10.0
+Pear 4.0
+Banana 9.0
+Hui 123.0
+Hello 23.0

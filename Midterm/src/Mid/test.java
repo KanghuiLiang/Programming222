@@ -1,0 +1,94 @@
+package Mid;
+
+import java.util.*;
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+//		Monster[] m = new Monster[5];
+//		Set<Monster> monsters = new HashSet<Monster>();
+//		monsters.add(new Normal_Monster("Hui1", 100, 2000000));
+//		monsters.add(new Normal_Monster("Hui2", 100, 20));
+//		monsters.add(new Normal_Monster("Hui3", 100, 20));
+//		monsters.add(new Normal_Monster("Hui4", 100, 20));
+//		monsters.add(new Normal_Monster("Hui5", 100, 20));
+// use array
+//		for (int i = 0; i<m.length; i++) {
+//			monster.add[i];
+//		}
+//		
+		
+		Set<Monster> monsterList = new HashSet<Monster>(5); 
+		String[] monName = {"Bob","Hui","Egg","Jack","Giant","Vichea","P"}; 
+		for(int i =0;i<monName.length;i++) { 
+		monsterList.add(new Normal_Monster("Monster "+monName[i],(int)(Math.random()*50)+50,(int)(Math.random()*50)+50));
+		
+		} 
+		for(Monster mon : monsterList) { 
+		System.out.println(mon + "\n"); 
+		}
+//		System.out.println("Monster:" +monster);
+		
+		
+//		for(Monster monster: monsters) {
+//			System.out.println(monster+"\n");
+//		}
+ 
+//		Set <Hero> he = new HashSet<Hero>();
+//		Hero[] she = { new Hero(), new Hero(), new Hero()};
+//		for(int i = 0; i<she.length; i++) {
+//			
+//		}
+//		he.add(new Hero("SA"));
+//		he.add(new Hero("SH"));
+
+		
+//		for (Hero heros: he) {
+//			System.out.println(heros+"\n");
+//		}
+		
+		Map<String,Hero> Hmap = new HashMap<String, Hero>(); //create a map???
+		String[] na = {"guy", "girl","t","h"};
+		String[] H = {"q","w","e","y"};
+		for (int i = 0; i<na.length; i++) {
+			Hmap.put(na[i], new Hero(H[i]));
+		}
+//		Hmap.put("THIS GUY",new Hero("SAM"));
+//		Hmap.put("THIS GIRL",new Hero("Hui"));
+		
+//		for (String name: Hmap.keySet()) {
+//			System.out.println("Hero is: "+name);
+//			Hmap.get("THIS GUY");
+//		}
+////		
+////		
+		Weapon w = new Weapon("NewWeapon",10000);
+////
+////		
+		Iterator<String> itr = Hmap.keySet().iterator();
+		while(itr.hasNext()) {
+			String name = itr.next();
+			Hmap.get(name).changeWp(w);
+			Hero He = Hmap.get(name);
+			System.out.println("name:"+name +"\n"+ He+"\n");
+		} 
+//		
+//		System.out.println("Give the Heros Weapon!\n");
+//
+//		
+//		for (String h: Hmap.keySet()) {
+//			Hmap.get(h).changeWp(w);
+//			System.out.println(Hmap.get(h)+"\n");
+//			}
+//		
+//		Hmap.get(name).changeWp(w);
+		
+		
+//		for (String h: Hmap.keyset()) {
+//			Hmap.get(h).changeWp(w);
+//			sys(Hmap.get(h))}
+	}
+
+}

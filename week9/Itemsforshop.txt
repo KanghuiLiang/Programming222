@@ -1,0 +1,11 @@
+Lily 10.0
+Holly 12.0
+Jasmine 12.0
+Daisy 15.0
+Poppy 16.0
+Rose 20.0
+Alyssum 20.0
+Iris 25.0
+Violet 25.0
+Ivy 30.0
+Sunflower 23

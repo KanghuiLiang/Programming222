@@ -1,0 +1,23 @@
+package Game;
+
+import java.util.*;
+public class Combat {
+	
+	public static void main(String[] args) {
+		Map<Integer, Monster> Monsters = new HashMap<Integer, Monster>();
+		int[] level = {1,2,3,4,5,7,8};
+		String [] monName = {"Young Rat","Snails on Speed","Screaming Gekk","Potter_Plant","Big Foot","Bull Rog","Face Sucker","Gazebo"};
+		
+		for(int i = 0; i<level.length; i++) {
+			Monsters.put(level[i],new Normal_Monster(monName[i], i, i, i, i, null));
+		}
+		Iterator itr = Monsters.keySet().iterator();
+		while (itr.hasNext()) {
+			int lev = (int) itr.next();
+			Monster mon = Monsters.get(lev);
+			System.out.println(mon);
+		}
+		
+	}
+
+}

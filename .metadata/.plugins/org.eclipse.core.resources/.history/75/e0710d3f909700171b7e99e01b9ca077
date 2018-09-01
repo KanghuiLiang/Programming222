@@ -1,0 +1,11 @@
+
+public class type_char {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    char letter ='p';
+    System.out.println(letter);
+    System.out.println(letter + "Hui");
+	}
+
+}

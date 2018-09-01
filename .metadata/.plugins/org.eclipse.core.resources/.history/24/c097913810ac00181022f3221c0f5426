@@ -1,0 +1,57 @@
+package Game;
+
+public class Treasure{
+	String name;
+	int bonus;
+	int price;
+	String raceRestrict;
+	String classRestriction;
+	String typeOfTreasure; //1 handed weapon, 2 handed weapon, helmet, armor, shoes, regular
+	String specialCondition;
+
+	public Treasure(String name, int bonus, int price, String raceRestrict, String classRestriction,
+			String typeOfTreasure, String specialCondition) {
+		this.name = name;
+	    this.bonus = bonus;
+		this.price = price;
+		this.raceRestrict = raceRestrict;
+		this.classRestriction = classRestriction;
+		this.typeOfTreasure = typeOfTreasure; 
+		this.specialCondition = specialCondition;
+	}
+	
+	public Treasure (String name, int bonus, int price, String raceRestrict,
+			String typeOfTreasure) {
+		if (this.name.equalsIgnoreCase("Elf Race Card")) {
+			this.specialCondition = "Turns you into an elf";
+		}
+		else if (this.name.equalsIgnoreCase("Dwarf Race Card")) {
+			this.specialCondition = "Turns you into a dwarf";
+		}
+		
+		else if (this.name.equalsIgnoreCase("Halfling Race Card")) {
+			this.specialCondition = "Turns you into a halfling";
+		}
+		
+		else if (this.name.equalsIgnoreCase("Halfling Race Card")) {
+			this.specialCondition = "Turns you into a halfling";
+		}
+		
+		else 
+		{ System.out.println("Wrong");}
+	    this.bonus = bonus;
+		this.price = price;
+		this.raceRestrict = raceRestrict;
+		this.classRestriction = null;
+		this.typeOfTreasure = typeOfTreasure; 		
+	}
+	
+	public String toString() {
+		
+		return "\n[Treasure] " + name + "\nB:" + bonus + " $:" + price 
+				+ "\nRace Restrict: " + raceRestrict + "\nClass Restrict:  " + classRestriction
+				+ "\nType: " + typeOfTreasure + "\nSpecial Condition: " + specialCondition+"\n";
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+ITE221 Database Management System
+ITE222 Web Development I  Pre: ITE221 ITE232
+ITE223 Cloud Technology Pre: ITE222
+ITE224 Mobile Application Development I Pre: ITE 222

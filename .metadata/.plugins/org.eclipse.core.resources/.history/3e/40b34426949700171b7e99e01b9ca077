@@ -1,0 +1,32 @@
+import java.util.*;
+public class type_char {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//type char
+	//It is legal to have variables,parameters,returns of type char
+    char letter ='p';
+    System.out.println(letter);
+    System.out.println(letter + "Hui");
+    
+    //The charAt method
+    //The char in a string can be accessed using the charAt method
+    //Accepts an int index parameter and returns the char at the index
+    
+    String food="cookie";
+    char firstLetter=food.charAt(0);//'c'
+    
+    System.out.println(firstLetter + " is for " + food);
+    
+    //Comparing char values
+    //you can compare char with ==, !=, and other operators
+    Scanner console= new Scanner(System.in);
+    String word = console.next();
+    char last = word.charAt(word.length() - 1);
+    if (last == 's') {
+    	System.out.println(word +" is plural.");
+    }
+    
+	}
+
+}

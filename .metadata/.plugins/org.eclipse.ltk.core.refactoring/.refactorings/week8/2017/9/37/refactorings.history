@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;lab8_2.main().console&apos; in &apos;lab8_2.main()&apos; to field&#x0A;- Original project: &apos;week8&apos;&#x0A;- Original element: &apos;lab8_2.main().console&apos;&#x0A;- Field name: &apos;console&apos;&#x0A;- Initialize field in method&#x0A;- Declared visibility: &apos;private&apos;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;console&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{lab8_2.java" name="console" selection="132 30" stamp="1505051014709" static="true" version="1.0" visibility="2"/>
+</session>

@@ -1,0 +1,38 @@
+package Mid;
+
+import java.util.*;
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<Monster> monster = new HashSet<Monster>();
+		
+//		Monster[] m = new Monster[5];
+		
+		monster.add(new Normal_Monster("Hui1", 100, 20));
+		monster.add(new Normal_Monster("Hui2", 100, 20));
+		monster.add(new Normal_Monster("Hui3", 100, 20));
+		monster.add(new Normal_Monster("Hui4", 100, 20));
+		monster.add(new Normal_Monster("Hui5", 100, 20));
+// use array
+//		for (int i = 0; i<m.length; i++) {
+//			monster.add[i];
+//		}
+//		
+//		System.out.println("Monster:" +monster);
+		
+		
+		for(Monster monsters: monster) {
+			System.out.println(monsters+"\n");
+		}
+ 
+		Set <Hero> he = new HashSet<Hero>();
+		Hero[] she = { new Hero(), new Hero(), new Hero()};
+		for(int i = 0; i<she.length; i++) {
+			he.add[i];
+		}
+		
+	}
+
+}

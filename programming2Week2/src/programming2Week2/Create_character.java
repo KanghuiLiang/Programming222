@@ -1,0 +1,24 @@
+package programming2Week2;
+
+
+public class Create_character {
+ 
+	public static void main (String arg[]) {
+		Character C1 = new Character();
+		
+		Character C2 = new Character(100,100);
+		Character C3 = new Character();
+		
+//		System.out.println(C1.HP);
+//		System.out.println(C1.MP);
+		System.out.println(C1.toString());
+		
+		
+		C2.decreasehealth(50);
+		int hey= C2.getHP();
+		System.out.println(hey);
+	}
+	
+
+	
+}
